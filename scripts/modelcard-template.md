@@ -1,10 +1,3 @@
----
-# Pulled from https://github.com/GSA/fedramp-ai/blob/main/README.md (fedramp-ai)
-# For reference on model card metadata, see the spec: https://github.com/huggingface/hub-docs/blob/main/modelcard.md?plain=1
-# Doc / guide: https://huggingface.co/docs/hub/model-cards
-{{ card_data }}
----
-
 # Model Card for {{ model_id | default("Model ID", true) }}
 
 <!-- Provide a quick summary of what the model is/does. -->
@@ -86,6 +79,7 @@ Use the code below to get started with the model.
 ### Training Procedure
 
 <!-- This relates heavily to the Technical Specifications. Content here should link to that section when it is relevant to the training procedure. -->
+{{ training_procedure | default("[More Information Needed]", true)}}
 
 #### Preprocessing [optional]
 
