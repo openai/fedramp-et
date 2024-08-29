@@ -1,14 +1,11 @@
 # Model Card for GPT-4o
 
 <!-- Provide a quick summary of what the model is/does. -->
+*Note:* This version of the GPT-4o system card was developed from the substance published in our [public system card](https://openai.com/index/gpt-4o-system-card/) and other OpenAI published documentation and blog posts. It was prepared specifically for FedRAMP Emerging Technology Prioritization Program per the program instructions.
 
-GPT-4o is a versatile, autoregressive omni model capable of processing and generating multimodal 
-inputs and outputs, including text, audio, image, and video. It is designed for high-performance 
-interaction across various sectors, such as customer support, sales, and content creation. Notably, 
-GPT-4o excels in responding to audio inputs with human-like speed, offering significant improvements 
-in non-English language processing, vision, and audio understanding compared to previous models. 
-It delivers these enhancements while being faster and more cost-effective than GPT-4 Turbo, making 
-it an efficient tool for a wide range of applications.
+Our system card provides a detailed look at GPT-4o’s capabilities, limitations, and safety evaluations across multiple categories, with a focus on speech-to-speech (voice) while also evaluating text and image capabilities, and the measures we’ve taken to enhance safety and alignment. We also include third party assessments on general autonomous capabilities, as well as discussion of potential societal impacts of GPT-4o text and vision capabilities.
+
+The scope of this system card is narrower than the potential scope of abilities GPT-4o can be used to unlock; notably, both custom fine-tuning and image capabilities are explicitly out of scope. In addition, this system card builds on previous cards (GPT-4, GPT-4v) that should be consulted in addition to the public GPT 4o system card which contains more details and a full evaluation of GPT 4o against our Preparedness Framework (https://cdn.openai.com/openai-preparedness-framework-beta.pdf).
 
 
 ## Model Details
@@ -17,29 +14,16 @@ it an efficient tool for a wide range of applications.
 
 <!-- Provide a longer summary of what this model is. -->
 
-**Note:** This version of the GPT-4o system card was developed from the substance published in our 
-public system card and other OpenAI published documentation and blog posts. It was prepared specifically 
-for FedRAMP Emerging Technology Prioritization Program per the program instructions.
+GPT-4o is an autoregressive omni model, which accepts as input any combination of text, audio, image, and video and generates any combination of text, audio, and image outputs. It’s trained end-to-end across text, vision, and audio, meaning that all inputs and outputs are processed by the same neural network. 
 
-GPT-4o is an autoregressive omni model, which accepts as input any combination of text,
-audio, image, and video and generates any combination of text, audio, and image outputs.
-It’s trained end-to-end across text, vision, and audio, meaning that all inputs and outputs
-are processed by the same neural network.
+GPT-4o can respond to audio inputs in as little as 232 milliseconds, with an average of 320 milliseconds, which is similar to human response time in a conversation. It matches GPT-4 Turbo performance on text in English and code, with significant improvement on text in non-English languages, while also being much faster and 50% cheaper in the API. 
 
-GPT-4o can respond to audio inputs in as little as 232 milliseconds, with an average of 320
-milliseconds, which is similar to human response time in a conversation. It matches GPT-4
-Turbo performance on text in English and code, with significant improvement on text in
-non-English languages, while also being much faster and 50% cheaper in the API. GPT-4o
-is especially better at vision and audio understanding compared to existing models.
-
-GPT-4o is designed to enhance operational efficiencies across various sectors, including
-customer support, sales, employee training, content creation, and more. It is optimized for
-multimodal inputs and outputs, ensuring a wide range of applications in different industries.
+GPT-4o is especially better at vision and audio understanding compared to existing models.
 
 
 - **Developed by:** OpenAI
 - **Model type:** Large Language Model
-- **Language(s) (NLP):** English
+- **Language(s) (NLP):** ChatGPT supports over 50 languages. More details at: https://help.openai.com/en/articles/8357869-how-to-change-your-language-setting-in-chatgpt#h_513834920e
 - **License:** N/A
 
 ## Uses
@@ -127,8 +111,7 @@ don’t share output from our services to defraud, scam, spam, mislead, bully, h
 defame, discriminate based on protected attributes, sexualize children, or promote violence, 
 hatred or the suffering of others.
 4. Respect our safeguards - don’t circumvent safeguards or safety mitigations in our services 
-unless supported by OpenAI (e.g., domain experts in our Red Teaming Network) or related to research 
-conducted in accordance with our Sharing & Publication Policy.
+unless supported by OpenAI (e.g., domain experts in our [Red Teaming Network](https://openai.com/index/red-teaming-network/)) or related to research conducted in accordance with our [Sharing & Publication Policy](https://openai.com/policies/sharing-publication-policy/).
 
 We report apparent child sexual abuse material (CSAM) to the National Center for Missing and 
 Exploited Children.
@@ -137,8 +120,7 @@ Exploited Children.
 
 The OpenAI Platform allows you to build entirely custom applications. As the developer of your 
 application, you are responsible for designing and implementing how your users interact with our 
-technology. To make this easier, we’ve shared our Safety best practices and offer tools like our 
-Moderation Endpoint and customizable system messages.
+technology. To make this easier, we’ve shared our [Safety best practices](https://platform.openai.com/docs/guides/safety-best-practices) and offer tools like our [Moderation Endpoint](https://platform.openai.com/docs/guides/moderation) and customizable system messages.
 
 We recognize that our API introduces new capabilities with scalable impact, so we have service-specific 
 policies that apply to all use of our APIs in addition to our Universal Policies:
@@ -299,7 +281,7 @@ towards limitations of non-English language performance in audio outputs.
  filters to detect and block outputs containing music, and for our limited alpha of ChatGPT’s advanced Voice Mode, instructed 
  the model to not sing at all. We intend to track the effectiveness of these mitigations and refine them over time.
 
-Although some technical mitigations are still in development, our Usage Policies disallow intentionally deceiving or misleading others, 
+Although some technical mitigations are still in development, our [Usage Policies](https://openai.com/policies/usage-policies/) disallow intentionally deceiving or misleading others, 
 and circumventing safeguards or safety mitigations. In addition to technical mitigations, we enforce our Usage Policies through 
 monitoring and take action on violative behavior in both ChatGPT and the API.
 
@@ -310,8 +292,8 @@ monitoring and take action on violative behavior in both ChatGPT and the API.
 
 We recommend model users review our public system cards and Preparedness Framework
 to gain a full understanding of the ChatGPT and API model risks, mitigations, and safety
-measures OpenAI takes in the development of its models. Also, developers should review
-the documentation available at platform.openai.com and implement the safety best practices.
+measures OpenAI takes in the development of its models. We also recommend developers should review
+the documentation available at [platform.openai.com](http://platform.openai.com) and implement the [safety best practices](https://platform.openai.com/docs/guides/safety-best-practices).
 
 
 ## How to Get Started with the Model
@@ -396,7 +378,7 @@ an additional layer of defense that, along with other safety mitigations, help e
 including CSAM, hateful content, violence, and CBRN. 
 - As with our previous image generation systems, we filter our image generation datasets for explicit content such as graphic sexual material and CSAM. 
 - We use advanced data filtering processes to reduce personal information from training data. 
-- Upon releasing DALL·E 3, we piloted a new approach to give users the power to opt images out of training. To respect those opt-outs, 
+- Upon releasing DALL·E 3, we piloted a new approach to give users the power to [opt images out of training](https://openai.com/index/dall-e-3/). To respect those opt-outs, 
 we fingerprinted the images and used the fingerprints to remove all instances of the images from the training dataset for the GPT-4o series of models.
 
 ## Evaluation
@@ -428,7 +410,7 @@ we sometimes re-purposedC the red teaming data to run targeted assessments on a 
 various mitigations
 
 In addition to the data from red teaming, a range of existing evaluation datasets were converted to evaluations for speech-to-speech 
-models using text-to-speech (TTS) systems such as Voice Engine. We converted text-based evaluation tasks to audio-based evaluation tasks 
+models using text-to-speech (TTS) systems such as [Voice Engine](https://openai.com/index/navigating-the-challenges-and-opportunities-of-synthetic-voices/). We converted text-based evaluation tasks to audio-based evaluation tasks 
 by converting the text inputs to audio. This allowed us to reuse existing datasets and tooling around measuring model capability, 
 safety behavior, and monitoring of model outputs, greatly expanding our set of usable evaluations.
 
@@ -515,12 +497,12 @@ wide range of countries, and a mix of genders.
 
 We evaluate on two sets of tasks: Capabilities and Safety Behavior.
 
-**Capabilities:**  
+Capabilities: 
 We evaluate on four tasks: TriviaQA, a subset of MMLUK, HellaSwag, and LAMBADA. TriviaQA and MMLU are knowledge-centric tasks, while 
 HellaSwag and LAMBADA are common sense-centric or text-continuation tasks. Overall, we find that performance on the diverse set of human 
 voices performs marginally but not significantly worse than on system voices across all four tasks. See public system card for full results.
 
-**Safety Behavior:**  
+Safety Behavior:  
 We evaluate on an internal dataset of conversations and evaluate the consistency of the model’s adherence and refusal behavior across 
 different user voices. Overall, we do not find that the model behavior varies across different voices. See public system card for full results.
 
