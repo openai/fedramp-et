@@ -38,20 +38,9 @@ multimodal inputs and outputs, ensuring a wide range of applications in differen
 
 
 - **Developed by:** OpenAI
-- **Funded by [optional]:** [More Information Needed]
-- **Shared by [optional]:** [More Information Needed]
 - **Model type:** Large Language Model
 - **Language(s) (NLP):** English
 - **License:** N/A
-- **Finetuned from model [optional]:** [More Information Needed]
-
-### Model Sources [optional]
-
-<!-- Provide the basic links for the model. -->
-
-- **Repository:** [More Information Needed]
-- **Paper [optional]:** [More Information Needed]
-- **Demo [optional]:** [More Information Needed]
 
 ## Uses
 
@@ -115,14 +104,6 @@ through automation, improved communication, and data-driven insights.
 - Answering employee questions about benefits, policies, and procedures.
 - Assisting with recruitment by screening resumes and conducting initial interviews.
 - Managing employee feedback and surveys.
- 
-
-
-### Downstream Use [optional]
-
-<!-- This section is for the model use when fine-tuned for a task, or when plugged into a larger ecosystem/app -->
-
-[More Information Needed]
 
 ### Out-of-Scope Use
 
@@ -339,12 +320,15 @@ Use the code below to get started with the model.
 
 To install the official Python bindings, run the following command:
 
-pip install openai
+```sh
+  pip install openai
+```
 
 To install the official Node.js library, run the following command in your Node.js project directory:
 
+```sh
 npm install openai@^4.0.0
-
+```
 
 ## Training Details
 
@@ -414,22 +398,6 @@ including CSAM, hateful content, violence, and CBRN.
 - We use advanced data filtering processes to reduce personal information from training data. 
 - Upon releasing DALL·E 3, we piloted a new approach to give users the power to opt images out of training. To respect those opt-outs, 
 we fingerprinted the images and used the fingerprints to remove all instances of the images from the training dataset for the GPT-4o series of models.
-
-
-#### Preprocessing [optional]
-
-[More Information Needed]
-
-
-#### Training Hyperparameters
-
-- **Training regime:** No specific information provided. <!--fp32, fp16 mixed precision, bf16 mixed precision, bf16 non-mixed precision, fp16 non-mixed precision, fp8 mixed precision -->
-
-#### Speeds, Sizes, Times [optional]
-
-<!-- This section provides information about throughput, start/end time, checkpoint size if relevant, etc. -->
-
-[More Information Needed]
 
 ## Evaluation
 
@@ -582,68 +550,6 @@ scientific research and advancement, measurements and mitigations for dangerous 
 autonomy, and scheming. Beyond these areas, we encourage research about economic impacts of omni models, and how tool use might 
 advance model capabilities.
 
-
-## Model Examination [optional]
-
-<!-- Relevant interpretability work for the model goes here -->
-
-[More Information Needed]
-
-## Environmental Impact [optional]
-
-<!-- Total emissions (in grams of CO2eq) and additional considerations, such as electricity usage, go here. Edit the suggested text below accordingly -->
-
-Carbon emissions can be estimated using the [Machine Learning Impact calculator](https://mlco2.github.io/impact#compute) presented in [Lacoste et al. (2019)](https://arxiv.org/abs/1910.09700).
-
-- **Hardware Type:** [More Information Needed]
-- **Hours used:** [More Information Needed]
-- **Cloud Provider:** [More Information Needed]
-- **Compute Region:** [More Information Needed]
-- **Carbon Emitted:** [More Information Needed]
-
-## Technical Specifications [optional]
-
-### Model Architecture and Objective
-
-[More Information Needed]
-
-### Compute Infrastructure
-
-[More Information Needed]
-
-#### Hardware
-
-[More Information Needed]
-
-#### Software
-
-[More Information Needed]
-
-## Citation [optional]
-
-<!-- If there is a paper or blog post introducing the model, the APA and Bibtex information for that should go in this section. -->
-
-**BibTeX:** **[optional]**
-
-[More Information Needed]
-
-**APA:** **[optional]**
-
-[More Information Needed]
-
-## Glossary [optional]
-
-<!-- If relevant, include terms and calculations in this section that can help readers understand the model or model card. -->
-
-[More Information Needed]
-
-## More Information [optional]
-
-[More Information Needed]
-
-## Model Card Authors [optional]
-
-[More Information Needed]
 
 ## Model Card Contact
 
